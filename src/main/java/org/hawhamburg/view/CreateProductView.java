@@ -3,6 +3,7 @@ package org.hawhamburg.view;
 import org.hawhamburg.controller.CreateProductController;
 
 import javax.swing.*;
+import java.util.List;
 import java.util.Vector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -162,5 +163,10 @@ public class CreateProductView extends JPanel {
         componentNameComboBox.setSelectedIndex(0);
         componentAmountComboBox.setSelectedIndex(0);
         tableModel.removeAll();
+    }
+
+    public void setComponentNameComboBoxItems(Vector<String> componentNames) {
+        componentNameComboBox.removeAllItems();
+        componentNames.forEach(componentNameComboBox::addItem);
     }
 }
