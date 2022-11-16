@@ -1,7 +1,6 @@
 package org.hawhamburg.observerwithevents.event;
 
 import org.hawhamburg.model.composite.Product;
-import org.hawhamburg.observerwithevents.visitor.EventVisitor;
 
 public class ProductCreatedEvent extends ComponentCreatedEvent {
 
@@ -17,8 +16,4 @@ public class ProductCreatedEvent extends ComponentCreatedEvent {
         return this.product;
     }
 
-    @Override
-    public void accept(EventVisitor eventVisitor) {
-        eventVisitor.visit(this);
-    }
 }

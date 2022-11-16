@@ -1,7 +1,6 @@
 package org.hawhamburg.observerwithevents.event;
 
 import org.hawhamburg.model.composite.Material;
-import org.hawhamburg.observerwithevents.visitor.EventVisitor;
 
 public class MaterialCreatedEvent extends ComponentCreatedEvent {
 
@@ -16,8 +15,4 @@ public class MaterialCreatedEvent extends ComponentCreatedEvent {
         return material;
     }
 
-    @Override
-    public void accept(EventVisitor eventVisitor) {
-        eventVisitor.visit(this);
-    }
 }
