@@ -12,6 +12,7 @@ public class ComponentOverviewView extends JPanel {
 
     private final ComponentOverviewController componentOverviewController;
     private final ComponentOverviewTableModel tableModel;
+
     public void addComponent(Component component) {
         tableModel.addComponent(component);
     }
@@ -23,7 +24,7 @@ public class ComponentOverviewView extends JPanel {
     static class ComponentOverviewTableModel extends AbstractTableModel {
 
         private static final List<String> COLUMN_NAMES = List.of("Name", "Price", "Total Price", "Type");
-        private Vector<Component> data;
+        private final Vector<Component> data;
 
         ComponentOverviewTableModel() {
             this.data = new Vector<>();
@@ -56,17 +57,15 @@ public class ComponentOverviewView extends JPanel {
             };
         }
 
-        public void reset() {
-            data = new Vector<>();
-        }
-
         public void addComponent(Component component) {
             this.data.add(component);
         }
+
         public void addComponents(List<Component> components) {
             this.data.addAll(components);
         }
     }
+
     ComponentOverviewView() {
         this.componentOverviewController = new ComponentOverviewController(this);
         setLayout(null);
@@ -81,11 +80,4 @@ public class ComponentOverviewView extends JPanel {
         add(tablePane);
         setVisible(true);
     }
-
-    public void resetTable() {
-        tableModel.reset();
-    }
-
-
-
 }
