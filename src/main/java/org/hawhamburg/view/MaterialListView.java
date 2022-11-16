@@ -68,4 +68,9 @@ public class MaterialListView extends JPanel {
     public void setMaterialListEntries(Vector<String > names, Vector<Integer> amounts) {
         tableModel.setEntries(names, amounts);
     }
+
+    public void setProductNameComboBoxItems(Vector<String> productNames) {
+        nameComboBox.removeAllItems();
+        productNames.forEach(nameComboBox::addItem);
+    }
 }

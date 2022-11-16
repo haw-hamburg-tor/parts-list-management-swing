@@ -1,10 +1,7 @@
 package org.hawhamburg.controller;
 
 import org.hawhamburg.model.singleton.ComponentRegister;
-import org.hawhamburg.observerwithevents.event.Event;
-import org.hawhamburg.observerwithevents.event.MaterialCreatedEvent;
-import org.hawhamburg.observerwithevents.event.ProductCreatedEvent;
-import org.hawhamburg.observerwithevents.observer.Observer;
+import org.hawhamburg.observer.Observer;
 import org.hawhamburg.view.CreateProductView;
 
 import java.util.List;
@@ -24,13 +21,9 @@ public class CreateProductController implements Observer {
     }
 
     @Override
-    public void update(Event event) {
-        if (event instanceof ProductCreatedEvent productCreatedEvent) {
-            createProductView.addNameToComponentNameComboBox(productCreatedEvent.getComponent().getName());
-        }
-        if (event instanceof MaterialCreatedEvent materialCreatedEvent) {
-            createProductView.addNameToComponentNameComboBox(materialCreatedEvent.getComponent().getName());
-        }
+    public void update() {
+        var componentNames = new Vector<>(ComponentRegister.getInstance().getComponentNames());
+        createProductView.setComponentNameComboBoxItems(componentNames);
     }
 
     public Vector<String> getComponentNames() {

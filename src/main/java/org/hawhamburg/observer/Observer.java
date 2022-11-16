@@ -1,6 +1,5 @@
-package org.hawhamburg.observerwithevents.observer;
+package org.hawhamburg.observer;
 
-import org.hawhamburg.observerwithevents.event.Event;
 
 public interface Observer {
 
@@ -8,5 +7,5 @@ public interface Observer {
      * Operation that is called by an Observee in order to
      * notify an Observer about an Event.
      */
-    void update(Event event);
+    void update();
 }

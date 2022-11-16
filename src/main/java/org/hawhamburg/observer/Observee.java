@@ -1,6 +1,4 @@
-package org.hawhamburg.observerwithevents.observer;
-
-import org.hawhamburg.observerwithevents.event.Event;
+package org.hawhamburg.observer;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -36,7 +34,7 @@ public abstract class Observee {
     /**
      * Sends update notifications to all currently registered Observers.
      */
-    protected void notifyObservers(Event event) {
-        this.observers.forEach(o -> o.update(event));
+    protected void notifyObservers() {
+        this.observers.forEach(Observer::update);
     }
 }

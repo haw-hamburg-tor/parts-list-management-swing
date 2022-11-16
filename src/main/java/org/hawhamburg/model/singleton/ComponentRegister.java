@@ -1,12 +1,11 @@
 package org.hawhamburg.model.singleton;
 
+import org.hawhamburg.controller.ComponentOverviewController;
 import org.hawhamburg.model.composite.Component;
 import org.hawhamburg.model.composite.CyclicStructureException;
 import org.hawhamburg.model.composite.Material;
 import org.hawhamburg.model.composite.Product;
-import org.hawhamburg.observerwithevents.event.MaterialCreatedEvent;
-import org.hawhamburg.observerwithevents.event.ProductCreatedEvent;
-import org.hawhamburg.observerwithevents.observer.Observee;
+import org.hawhamburg.observer.Observee;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -33,7 +32,7 @@ public class ComponentRegister extends Observee {
     public Material createMaterial(String name, Integer price) {
         var material = new Material(name, price);
         addMaterial(material);
-        notifyObservers(new MaterialCreatedEvent(material));
+        notifyObservers();
         return material;
     }
 
@@ -45,7 +44,7 @@ public class ComponentRegister extends Observee {
                 product.addPart(component, componentAmounts.get(i));
             }
             addProduct(product);
-            notifyObservers(new ProductCreatedEvent(product));
+            notifyObservers();
             return product;
 
         } catch (CyclicStructureException e) {
