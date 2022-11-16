@@ -1,0 +1,14 @@
+@startuml
+!theme plain
+hide empty members
+
+class ComponentRegister <<(S,#FFFFFF) Singleton>> {
+    {static} - instance : ComponentRegister
+    - materials : Map<String, Material>
+    - products : Map<String, Product>
+    {static} + getInstance() : ComponentRegister
+    + createMaterial(String name, Integer price) : Material
+    + createProduct(String name, Integer price) : Product
+    ... ()
+}
+@enduml

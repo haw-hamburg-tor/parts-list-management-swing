@@ -1,0 +1,21 @@
+@startuml
+!theme plain
+hide empty members
+
+abstract class Component {
+    # name : String
+    # price : Integer
+    {abstract} + contains(Component c) : boolean
+    {abstract} + fetchTotalPrice() : Integer
+    {abstract} + fetchMaterialList() : List<Material>
+}
+class Material {}
+class Product {
+    + addPart(Component c): void
+}
+
+Material --up-|> Component
+Product --up-|> Component
+
+Product o--> "*" Component : parts
+@enduml

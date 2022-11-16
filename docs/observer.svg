@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="204px" preserveAspectRatio="none" style="width:644px;height:204px;background:#FFFFFF;" version="1.1" viewBox="0 0 644 204" width="644px" zoomAndPan="magnify"><defs/><g><!--MD5=[d40932010816485ec57b44b6eea2392a]
+class Observer--><g id="elem_Observer"><rect codeLine="4" fill="#FFFFFF" height="52.2969" id="Observer" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="111" x="181.5" y="28.5"/><ellipse cx="202.6" cy="42.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M203.5531,39.2813 L205.2719,39.2813 C205.6625,39.2813 205.85,39.25 205.975,39.1719 C206.2406,39.0156 206.3813,38.7344 206.3813,38.4375 C206.3813,38.1719 206.2719,37.9063 206.0375,37.7344 C205.8656,37.625 205.725,37.5938 205.2719,37.5938 L200.1313,37.5938 C199.6938,37.5938 199.5688,37.6094 199.4125,37.7031 C199.1625,37.8594 199.0063,38.1563 199.0063,38.4375 C199.0063,38.7188 199.1469,38.9688 199.3656,39.1406 C199.5219,39.25 199.7094,39.2813 200.1313,39.2813 L201.85,39.2813 L201.85,45.7969 L200.1313,45.7969 C199.6938,45.7969 199.5688,45.8125 199.4125,45.9219 C199.1625,46.0781 199.0063,46.3594 199.0063,46.6563 C199.0063,46.9063 199.1469,47.1719 199.3656,47.3281 C199.5219,47.4531 199.725,47.5 200.1313,47.5 L205.2719,47.5 C206.0219,47.5 206.3813,47.2188 206.3813,46.6563 C206.3813,46.375 206.2719,46.125 206.0375,45.9531 C205.8656,45.8281 205.725,45.7969 205.2719,45.7969 L203.5531,45.7969 L203.5531,39.2813 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="65" x="216.4" y="47.3467">Observer</text><line style="stroke:#000000;stroke-width:1.0;" x1="182.5" x2="291.5" y1="56.5" y2="56.5"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="99" x="187.5" y="73.4951">update(): void</text></g><!--MD5=[beaa385b373d77fdccad8b0565caf4a6]
+class Controller1--><g id="elem_Controller1"><rect codeLine="7" fill="#FFFFFF" height="28" id="Controller1" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="110" x="12" y="164"/><ellipse cx="25" cy="178" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M27.3438,173.6719 C26.4063,173.2344 25.8125,173.0938 24.9375,173.0938 C22.3125,173.0938 20.3125,175.1719 20.3125,177.8906 L20.3125,179.0156 C20.3125,181.5938 22.4219,183.4844 25.3125,183.4844 C26.5313,183.4844 27.6875,183.1875 28.4375,182.6406 C29.0156,182.2344 29.3438,181.7813 29.3438,181.3906 C29.3438,180.9375 28.9531,180.5469 28.4844,180.5469 C28.2656,180.5469 28.0625,180.625 27.875,180.8125 C27.4219,181.2969 27.4219,181.2969 27.2344,181.3906 C26.8125,181.6563 26.125,181.7813 25.3594,181.7813 C23.3125,181.7813 22.0156,180.6875 22.0156,178.9844 L22.0156,177.8906 C22.0156,176.1094 23.2656,174.7969 25,174.7969 C25.5781,174.7969 26.1875,174.9531 26.6563,175.2031 C27.1406,175.4844 27.3125,175.7031 27.4063,176.1094 C27.4688,176.5156 27.5,176.6406 27.6406,176.7656 C27.7813,176.9063 28.0156,177.0156 28.2344,177.0156 C28.5,177.0156 28.7656,176.875 28.9375,176.6563 C29.0469,176.5 29.0781,176.3125 29.0781,175.8906 L29.0781,174.4688 C29.0781,174.0313 29.0625,173.9063 28.9688,173.75 C28.8125,173.4844 28.5313,173.3438 28.2344,173.3438 C27.9375,173.3438 27.7344,173.4375 27.5156,173.75 L27.3438,173.6719 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="82" x="37" y="182.8467">Controller1</text></g><!--MD5=[ec533e48db8b0af72cdf123c81a1684b]
+class Controller2--><g id="elem_Controller2"><rect codeLine="8" fill="#FFFFFF" height="28" id="Controller2" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="109" x="157.5" y="164"/><ellipse cx="170.5" cy="178" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M172.8438,173.6719 C171.9063,173.2344 171.3125,173.0938 170.4375,173.0938 C167.8125,173.0938 165.8125,175.1719 165.8125,177.8906 L165.8125,179.0156 C165.8125,181.5938 167.9219,183.4844 170.8125,183.4844 C172.0313,183.4844 173.1875,183.1875 173.9375,182.6406 C174.5156,182.2344 174.8438,181.7813 174.8438,181.3906 C174.8438,180.9375 174.4531,180.5469 173.9844,180.5469 C173.7656,180.5469 173.5625,180.625 173.375,180.8125 C172.9219,181.2969 172.9219,181.2969 172.7344,181.3906 C172.3125,181.6563 171.625,181.7813 170.8594,181.7813 C168.8125,181.7813 167.5156,180.6875 167.5156,178.9844 L167.5156,177.8906 C167.5156,176.1094 168.7656,174.7969 170.5,174.7969 C171.0781,174.7969 171.6875,174.9531 172.1563,175.2031 C172.6406,175.4844 172.8125,175.7031 172.9063,176.1094 C172.9688,176.5156 173,176.6406 173.1406,176.7656 C173.2813,176.9063 173.5156,177.0156 173.7344,177.0156 C174,177.0156 174.2656,176.875 174.4375,176.6563 C174.5469,176.5 174.5781,176.3125 174.5781,175.8906 L174.5781,174.4688 C174.5781,174.0313 174.5625,173.9063 174.4688,173.75 C174.3125,173.4844 174.0313,173.3438 173.7344,173.3438 C173.4375,173.3438 173.2344,173.4375 173.0156,173.75 L172.8438,173.6719 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="81" x="182.5" y="182.8467">Controller2</text></g><!--MD5=[ce1093c18a4a000371f3da977c216f8d]
+class ControllerN--><g id="elem_ControllerN"><rect codeLine="9" fill="#FFFFFF" height="28" id="ControllerN" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="111" x="301.5" y="164"/><ellipse cx="314.5" cy="178" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M316.8438,173.6719 C315.9063,173.2344 315.3125,173.0938 314.4375,173.0938 C311.8125,173.0938 309.8125,175.1719 309.8125,177.8906 L309.8125,179.0156 C309.8125,181.5938 311.9219,183.4844 314.8125,183.4844 C316.0313,183.4844 317.1875,183.1875 317.9375,182.6406 C318.5156,182.2344 318.8438,181.7813 318.8438,181.3906 C318.8438,180.9375 318.4531,180.5469 317.9844,180.5469 C317.7656,180.5469 317.5625,180.625 317.375,180.8125 C316.9219,181.2969 316.9219,181.2969 316.7344,181.3906 C316.3125,181.6563 315.625,181.7813 314.8594,181.7813 C312.8125,181.7813 311.5156,180.6875 311.5156,178.9844 L311.5156,177.8906 C311.5156,176.1094 312.7656,174.7969 314.5,174.7969 C315.0781,174.7969 315.6875,174.9531 316.1563,175.2031 C316.6406,175.4844 316.8125,175.7031 316.9063,176.1094 C316.9688,176.5156 317,176.6406 317.1406,176.7656 C317.2813,176.9063 317.5156,177.0156 317.7344,177.0156 C318,177.0156 318.2656,176.875 318.4375,176.6563 C318.5469,176.5 318.5781,176.3125 318.5781,175.8906 L318.5781,174.4688 C318.5781,174.0313 318.5625,173.9063 318.4688,173.75 C318.3125,173.4844 318.0313,173.3438 317.7344,173.3438 C317.4375,173.3438 317.2344,173.4375 317.0156,173.75 L316.8438,173.6719 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="326.5" y="182.8467">ControllerN</text></g><!--MD5=[dc87c94dcebeab5c35d9415a03cca9f9]
+class Observee--><g id="elem_Observee"><rect codeLine="11" fill="#FFFFFF" height="84.8906" id="Observee" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="231" x="406.5" y="12"/><ellipse cx="484.25" cy="26" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M486.3281,27.8125 L486.7188,28.7969 L486.3281,28.7969 C485.875,28.7969 485.7656,28.8125 485.6094,28.9219 C485.3594,29.0781 485.2031,29.3594 485.2031,29.6563 C485.2031,29.9219 485.3438,30.1719 485.5625,30.3281 C485.7031,30.4531 485.9063,30.5 486.3281,30.5 L488.6875,30.5 C489.0469,30.5 489.2656,30.4688 489.4063,30.375 C489.6563,30.2344 489.8125,29.9375 489.8125,29.6563 C489.8125,29.375 489.6719,29.125 489.4531,28.9688 C489.2813,28.8281 489.125,28.7969 488.6563,28.7969 L485.2656,20.5938 L481.5938,20.5938 C481.1406,20.5938 481.0156,20.6094 480.8594,20.7031 C480.6094,20.875 480.4531,21.1563 480.4531,21.4375 C480.4531,21.7188 480.5938,21.9688 480.8125,22.1406 C480.9844,22.25 481.1563,22.2813 481.5938,22.2813 L482.6719,22.2813 L480.0313,28.7969 C479.6094,28.7969 479.4531,28.8125 479.2969,28.9219 C479.0469,29.0781 478.8906,29.3594 478.8906,29.6563 C478.8906,30.2188 479.2656,30.5 480.0156,30.5 L482.2813,30.5 C482.6406,30.5 482.8594,30.4688 482.9844,30.375 C483.25,30.2344 483.3906,29.9375 483.3906,29.6563 C483.3906,29.375 483.2656,29.125 483.0469,28.9531 C482.875,28.8281 482.7344,28.7969 482.2813,28.7969 L481.8906,28.7969 L482.2813,27.8125 L486.3281,27.8125 Z M485.625,26.1094 L482.9531,26.1094 L484.2969,22.8438 L485.625,26.1094 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="68" x="501.75" y="30.8467">Observee</text><line style="stroke:#000000;stroke-width:1.0;" x1="407.5" x2="636.5" y1="40" y2="40"/><ellipse cx="417.5" cy="51" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="189" x="424.5" y="56.9951">register(Observer o) : void</text><ellipse cx="417.5" cy="67.2969" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="207" x="424.5" y="73.292">deregister(Observer o) : void</text><ellipse cx="417.5" cy="83.5938" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="169" x="424.5" y="89.5889">notifyObservers() : void</text></g><!--MD5=[21a7b5e25bf481cff0cfc9595f2b297b]
+class ComponentRegister--><g id="elem_ComponentRegister"><rect codeLine="16" fill="#FFFFFF" height="40.2656" id="ComponentRegister" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="175" x="447.5" y="158"/><ellipse cx="460.5" cy="178.1328" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M464.2813,174.1016 C464.2813,173.6641 464.2656,173.5234 464.1719,173.3672 C464.0313,173.1328 463.75,172.9766 463.4531,172.9766 C463.1094,172.9766 462.9688,173.1172 462.7969,173.5391 C462.2031,173.1641 461.4531,172.9766 460.5781,172.9766 C458.4688,172.9766 456.8906,174.2734 456.8906,175.9922 C456.8906,176.9609 457.4219,177.8672 458.2813,178.3516 C458.8281,178.6641 459.375,178.8359 460.4844,179.0234 C461.6406,179.2266 461.9063,179.2891 462.2656,179.4766 C462.6406,179.6797 462.875,180.0234 462.875,180.3828 C462.875,181.1172 461.8906,181.6641 460.6406,181.6641 C459.5156,181.6641 458.4375,181.1797 458.2656,180.5703 C458.1406,180.1016 458.1406,180.1016 458.0156,179.9922 C457.8594,179.8359 457.6406,179.7422 457.4063,179.7422 C457.125,179.7422 456.875,179.8672 456.7031,180.0859 C456.5938,180.2578 456.5469,180.4453 456.5469,180.8672 L456.5469,181.9922 C456.5469,182.7578 456.8281,183.1172 457.4219,183.1172 C457.6875,183.1172 457.8125,183.0547 458.0938,182.7109 C458.9375,183.1484 459.8281,183.3672 460.75,183.3672 C463.0781,183.3672 464.6406,182.1797 464.6406,180.4141 C464.6406,179.5234 464.3281,178.8359 463.6406,178.2891 C463.1094,177.8672 462.4688,177.6172 460.9844,177.3516 C459.7188,177.1172 459.625,177.0859 459.2969,176.9141 C458.9219,176.7266 458.6563,176.3359 458.6563,175.9766 C458.6563,175.2422 459.5156,174.6797 460.5781,174.6797 C461.6406,174.6797 462.4531,175.1484 462.6094,175.8203 C462.7188,176.3672 462.7188,176.3672 462.8438,176.5078 C462.9844,176.6328 463.2188,176.7422 463.4531,176.7422 C463.7188,176.7422 463.9688,176.6016 464.1406,176.3828 C464.25,176.2109 464.2813,176.0703 464.2813,175.6016 L464.2813,174.1016 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="71" x="510.5" y="174.1387">«Singleton»</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="472.5" y="189.9639">ComponentRegister</text></g><!--MD5=[62d2f29b228421d962015028fc2a4232]
+reverse link Observer to Controller1--><g id="link_Observer_Controller1"><path d="M185.442,92.349 C151.532,116.5845 109.1734,146.8584 85.4,163.8494 " fill="none" id="Observer-backto-Controller1" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="181.434,86.609,201.776,80.675,189.575,97.999,181.434,86.609" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[adb01df9a2ebeeb09ed1addeab2fe6ea]
+reverse link Observer to Controller2--><g id="link_Observer_Controller2"><path d="M227.739,100.5087 C223.099,123.0603 217.819,148.7204 214.706,163.8494 " fill="none" id="Observer-backto-Controller2" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="220.933,98.8537,231.82,80.675,234.645,101.6753,220.933,98.8537" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[e4e94451c9079af6c293d24ea348cc26]
+reverse link Observer to ControllerN--><g id="link_Observer_ControllerN"><path d="M276.04,95.028 C299.497,118.7786 327.844,147.4791 344.012,163.8494 " fill="none" id="Observer-backto-ControllerN" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="270.938,99.8235,261.864,80.675,280.899,89.986,270.938,99.8235" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[1a2404c446fdedd4c8428b29ce66d54c]
+reverse link Observee to ComponentRegister--><g id="link_Observee_ComponentRegister"><path d="M528.605,117.2334 C530.19,132.0487 531.767,146.786 532.958,157.9196 " fill="none" id="Observee-backto-ComponentRegister" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="521.641,117.9447,526.474,97.313,535.562,116.4551,521.641,117.9447" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d41ab097318bd17c17cb2830373366e2]
+reverse link Observer to Observee--><g id="link_Observer_Observee"><path codeLine="18" d="M297.636,54.5 C329.293,54.5 369.106,54.5 406.375,54.5 " fill="none" id="Observer-backto-Observee" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="292.627,54.5,301.627,58.5,297.627,54.5,301.627,50.5,292.627,54.5" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="64" x="317.5" y="47.5669">observers</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="7" x="300.5722" y="50.5481">*</text></g><!--MD5=[e5d5a28b4f9917c6fdc0276df81e1fe1]
+@startuml
+!theme plain
+hide empty members
+
+interface Observer {
+    {abstract} update(): void
+}
+class Controller1 implements Observer {}
+class Controller2 implements Observer {}
+class ControllerN implements Observer {}
+
+abstract class Observee {
+    + register(Observer o) : void
+    + deregister(Observer o) : void
+    + notifyObservers() : void
+}
+class ComponentRegister <<(S,#FFFFFF) Singleton>> extends Observee
+
+Observee -left-> "*" Observer : observers
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+hide empty members
+
+interface Observer {
+    {abstract} update(): void
+}
+class Controller1 implements Observer {}
+class Controller2 implements Observer {}
+class ControllerN implements Observer {}
+
+abstract class Observee {
+    + register(Observer o) : void
+    + deregister(Observer o) : void
+    + notifyObservers() : void
+}
+class ComponentRegister <<(S,#FFFFFF) Singleton>> extends Observee
+
+Observee -left-> "*" Observer : observers
+@enduml
+
+PlantUML version 1.2022.7beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,20 @@
+@startuml
+!theme plain
+hide empty members
+
+interface Observer {
+    {abstract} update(): void
+}
+class Controller1 implements Observer {}
+class Controller2 implements Observer {}
+class ControllerN implements Observer {}
+
+abstract class Observee {
+    + register(Observer o) : void
+    + deregister(Observer o) : void
+    + notifyObservers() : void
+}
+class ComponentRegister <<(S,#FFFFFF) Singleton>> extends Observee
+
+Observee -left-> "*" Observer : observers
+@enduml
