@@ -5,7 +5,6 @@ import org.hawhamburg.observerwithevents.event.Event;
 import org.hawhamburg.observerwithevents.event.MaterialCreatedEvent;
 import org.hawhamburg.observerwithevents.event.ProductCreatedEvent;
 import org.hawhamburg.observerwithevents.observer.Observer;
-import org.hawhamburg.observerwithevents.visitor.EventVisitor;
 import org.hawhamburg.view.CreateProductView;
 
 import java.util.List;
@@ -26,16 +25,12 @@ public class CreateProductController implements Observer {
 
     @Override
     public void update(Event event) {
-        event.accept(new EventVisitor() {
-            @Override
-            public void visit(ProductCreatedEvent productCreatedEvent) {
-                createProductView.addNameToComponentNameComboBox(productCreatedEvent.getComponent().getName());
-            }
-            @Override
-            public void visit(MaterialCreatedEvent materialCreatedEvent) {
-                createProductView.addNameToComponentNameComboBox(materialCreatedEvent.getComponent().getName());
-            }
-        });
+        if (event instanceof ProductCreatedEvent productCreatedEvent) {
+            createProductView.addNameToComponentNameComboBox(productCreatedEvent.getComponent().getName());
+        }
+        if (event instanceof MaterialCreatedEvent materialCreatedEvent) {
+            createProductView.addNameToComponentNameComboBox(materialCreatedEvent.getComponent().getName());
+        }
     }
 
     public Vector<String> getComponentNames() {

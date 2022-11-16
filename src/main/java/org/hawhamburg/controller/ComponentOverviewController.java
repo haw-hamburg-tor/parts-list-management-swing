@@ -5,7 +5,6 @@ import org.hawhamburg.observerwithevents.event.Event;
 import org.hawhamburg.observerwithevents.event.MaterialCreatedEvent;
 import org.hawhamburg.observerwithevents.event.ProductCreatedEvent;
 import org.hawhamburg.observerwithevents.observer.Observer;
-import org.hawhamburg.observerwithevents.visitor.EventVisitor;
 import org.hawhamburg.view.ComponentOverviewView;
 
 public class ComponentOverviewController implements Observer {
@@ -19,16 +18,13 @@ public class ComponentOverviewController implements Observer {
 
     @Override
     public void update(Event event) {
-        event.accept(new EventVisitor() {
-            @Override
-            public void visit(ProductCreatedEvent productCreatedEvent) {
-                componentOverviewView.addComponent(productCreatedEvent.getComponent());
-            }
-            @Override
-            public void visit(MaterialCreatedEvent materialCreatedEvent) {
-                componentOverviewView.addComponent(materialCreatedEvent.getComponent());
-            }
-        });
+        if (event instanceof ProductCreatedEvent productCreatedEvent) {
+            componentOverviewView.addComponent(productCreatedEvent.getComponent());
+
+        }
+        if (event instanceof MaterialCreatedEvent materialCreatedEvent) {
+            componentOverviewView.addComponent(materialCreatedEvent.getComponent());
+        }
     }
 
     public void initializeComponentTable() {
