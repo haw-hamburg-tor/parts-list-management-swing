@@ -5,7 +5,7 @@ It may be used
 * create new Components (Products or Materials).
 * list all Materials of a given Product.
 
-Its entrypoint is the [Main.class](src/main/java/org/hawhamburg/Application.java).
+Its entrypoint is [Application.java](src/main/java/org/hawhamburg/Application.java).
 
 ---
 
