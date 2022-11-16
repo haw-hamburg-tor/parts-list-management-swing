@@ -1,29 +1,26 @@
 package org.hawhamburg.controller;
 
 import org.hawhamburg.model.singleton.ComponentRegister;
-import org.hawhamburg.observer.Observer;
 import org.hawhamburg.view.CreateProductView;
 
 import java.util.List;
 import java.util.Vector;
 
-public class CreateProductController implements Observer {
+public class CreateProductController {
 
     private final CreateProductView createProductView;
 
     public CreateProductController(CreateProductView createProductView) {
         this.createProductView = createProductView;
-        ComponentRegister.getInstance().register(this);
+        ComponentRegister.getInstance().setCreateProductController(this);
     }
 
     public void addEntryToAddComponentTable(String name, Integer amount) {
         createProductView.addEntryToAddComponentTable(name, amount);
     }
 
-    @Override
-    public void update() {
-        var componentNames = new Vector<>(ComponentRegister.getInstance().getComponentNames());
-        createProductView.setComponentNameComboBoxItems(componentNames);
+    public void addNameToNameComboBox(String name) {
+        createProductView.addNameToComponentNameComboBox(name);
     }
 
     public Vector<String> getComponentNames() {

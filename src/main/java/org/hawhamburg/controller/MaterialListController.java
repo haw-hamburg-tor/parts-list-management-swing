@@ -3,7 +3,6 @@ package org.hawhamburg.controller;
 import org.hawhamburg.model.singleton.ComponentRegister;
 import org.hawhamburg.model.composite.Material;
 import org.hawhamburg.model.composite.Product;
-import org.hawhamburg.observer.Observer;
 import org.hawhamburg.view.MaterialListView;
 
 import java.util.Map;
@@ -11,18 +10,16 @@ import java.util.Vector;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class MaterialListController implements Observer {
+public class MaterialListController {
 
     private final MaterialListView materialListView;
     public MaterialListController(MaterialListView materialListView) {
         this.materialListView = materialListView;
-        ComponentRegister.getInstance().register(this);
+        ComponentRegister.getInstance().setMaterialListController(this);
     }
 
-    @Override
-    public void update() {
-        var productNames = new Vector<>(ComponentRegister.getInstance().getProductNames());
-        materialListView.setProductNameComboBoxItems(productNames);
+    public void addNameToNameComboBox(String name) {
+        materialListView.addNameToNameComboBox(name);
     }
 
     public Vector<String> getProductNames() {

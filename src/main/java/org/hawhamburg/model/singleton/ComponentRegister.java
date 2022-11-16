@@ -1,11 +1,12 @@
 package org.hawhamburg.model.singleton;
 
 import org.hawhamburg.controller.ComponentOverviewController;
+import org.hawhamburg.controller.CreateProductController;
+import org.hawhamburg.controller.MaterialListController;
 import org.hawhamburg.model.composite.Component;
 import org.hawhamburg.model.composite.CyclicStructureException;
 import org.hawhamburg.model.composite.Material;
 import org.hawhamburg.model.composite.Product;
-import org.hawhamburg.observer.Observee;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -13,7 +14,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public class ComponentRegister extends Observee {
+public class ComponentRegister {
+
+    private ComponentOverviewController componentOverviewController;
+    private CreateProductController createProductController;
+    private MaterialListController materialListController;
 
     private static ComponentRegister instance = null;
     private final Map<String, Material> materials;
@@ -32,7 +37,8 @@ public class ComponentRegister extends Observee {
     public Material createMaterial(String name, Integer price) {
         var material = new Material(name, price);
         addMaterial(material);
-        notifyObservers();
+        componentOverviewController.addComponentToTable(material);
+        createProductController.addNameToNameComboBox(name);
         return material;
     }
 
@@ -44,7 +50,9 @@ public class ComponentRegister extends Observee {
                 product.addPart(component, componentAmounts.get(i));
             }
             addProduct(product);
-            notifyObservers();
+            componentOverviewController.addComponentToTable(product);
+            createProductController.addNameToNameComboBox(name);
+            materialListController.addNameToNameComboBox(name);
             return product;
 
         } catch (CyclicStructureException e) {
@@ -80,5 +88,17 @@ public class ComponentRegister extends Observee {
 
     public List<String> getComponentNames() {
         return Stream.concat(materials.keySet().stream(), products.keySet().stream()).sorted().toList();
+    }
+
+    public void setComponentOverviewController(ComponentOverviewController componentOverviewController) {
+        this.componentOverviewController = componentOverviewController;
+    }
+
+    public void setCreateProductController(CreateProductController createProductController) {
+        this.createProductController = createProductController;
+    }
+
+    public void setMaterialListController(MaterialListController materialListController) {
+        this.materialListController = materialListController;
     }
 }
